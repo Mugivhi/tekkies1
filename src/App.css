@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+#app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background:green;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height:50rem;
+  width: 15rem;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+  background:red ;
+
+  /* Center slide text vertically */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; */
+}
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+/*my new css*/
+/*for the right*/
+.third{
+  background-color: #7be9d6;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+/* .third :hover{
+  transform: scale(1.1);
+} */
+.third .cover{
+  background-color:transparent;
+  align-items: center;
+  text-align: center;
+  font-size:5rem;
   color: white;
+  justify-content: center;
+  align-self: center;
+  height: 90%;
+  width: 90%;
+}
+.third .cover .text{
+  height: 2rem;
+  width: 100%;
+  word-spacing: 15px;
+  font-size:small;
+}
+.third .select-colors{
+  height: 10rem;
+  width: 100%;
+  word-spacing:1px;
+  font-size:large;
+}
+.third .size{
+  display: grid;
+  grid-row: 1fr, 1fr, 1fr;
+  height: 16rem;
+  width: 100%;
+  word-spacing:1px;
+  font-size:large;
+  align-items: center;
+  justify-content: center;
+}
+.third .size .btn{
+  width: 100%;
+  margin-top: -4rem;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex-direction: row;
+
+}
+.third .size .btn button{
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  height: 3rem;
+  width: 3rem;
+  background-color: #9ce8ec;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  /* margin-left: rem;
+  margin-right: 1rem; */
+
+}
+.third .size .btn :hover{
+  background-color: whitesmoke;
+  color: #75b9bf;
+}
+.colors{
+  margin-top: 50px;
+}
+.colors span{
+  margin: 10px;
+  justify-content: space-between;
+
+}
+.orange{
+  height: 25px;
+  width: 25px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+.purple{
+  height: 25px;
+  width: 25px;
+  background-color:purple;
+  border-radius: 50%;
+  display: inline-block;
+}
+.blue{
+  height: 25px;
+  width: 25px;
+  background-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dakblue{
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+/*for the middle div*/
+.second{
+  background-color:#d8f0f9;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 400px;
+  display: grid;
+  border-radius: 20px;
+}
+.second img{
+  height: 8rem;
+  width: 5rem;
+}
+.toptekkie{
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 25rem;
+  margin-top: -50px;
+
+}
+.toptekkie img{
+  margin-left: 2rem;
+  margin-top: -4rem;
+  transform: skewY(25deg);
+  width: 15rem;
+  height:30rem;
+}
+.dowtekkies{
+  /* background-color: blue; */
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+.dowtekkies img{
+  margin:2px;
+  padding: 4px;
+  width: 6rem;
+}
+.text2{
+  color: gray;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: 10rem;
+  margin-top:25px;
+  word-spacing: 10px;
+
+  
+}
+.text2 h5{
+  font-size: 1.5rem;
+  font-weight: 10rem;
+  color:#75b9bf;
 }
 
-.App-link {
-  color: #61dafb;
+/* .dowtekkies img :hover{
+  border: 2px black;
+} */
+/*FOR THE LEFT DIV*/
+.first{
+  background-color:#6cc7e1;
+  height: 600px;
+  width: 400px;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.first .viewed{
+  /* background-color:blue; */
+  align-items: center;
+  text-align: center;
+  word-spacing: 10px;
+  font-size:1rem;
+  color: white;
+  justify-content: center;
+  align-self: center;
+  height: 90%;
+  width: 90%;
+}
+.first .viewed .arrow{
+  /* background-color: green; */
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  
+}
+.first .viewed .arrow p{
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.first .viewed .pictures{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  height: 85%;
+  
+}
+.first .viewed .pictures img{
+  height: 8rem;
+  width: 5rem;
+  transform: skewY(30deg);
+  /* background:transparent; */
 }

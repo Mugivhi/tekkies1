@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import "./App.css";
+import Rightsite from "./liftisite";
+import Leftisite from "./center";
+import AddItem from "./rightsite";
+import { Navigation } from "swiper";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+        <SwiperSlide><Rightsite/></SwiperSlide>
+        <SwiperSlide><Leftisite /> </SwiperSlide>
+        <SwiperSlide><AddItem /></SwiperSlide>
+
+      </Swiper>
+    </>
   );
 }
-
-export default App;
+export default App
