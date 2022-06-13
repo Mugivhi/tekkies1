@@ -15,9 +15,9 @@ function App() {
   return (
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-        <SwiperSlide><Rightsite/></SwiperSlide>
-        <SwiperSlide><Leftisite /> </SwiperSlide>
         <SwiperSlide><AddItem /></SwiperSlide>
+        <SwiperSlide><Leftisite /></SwiperSlide>
+        <SwiperSlide><Rightsite/></SwiperSlide>
 
       </Swiper>
     </>
