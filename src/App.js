@@ -18,8 +18,11 @@ function App() {
         <SwiperSlide><AddItem /></SwiperSlide>
         <SwiperSlide><Leftisite /></SwiperSlide>
         <SwiperSlide><Rightsite/></SwiperSlide>
-
       </Swiper>
+      {/* <div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div> */}
     </>
   );
 }

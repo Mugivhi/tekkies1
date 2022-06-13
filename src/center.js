@@ -19,6 +19,11 @@ function Leftisite(){
             <img src={pic3}></img>
             <img src= {pic4}></img>
             </div>
+            <div className="button-add">
+                <button>
+                    ADD TO BASKET
+                </button>
+            </div>
            
         </div>
     )
