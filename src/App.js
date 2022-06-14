@@ -14,7 +14,8 @@ import { Navigation } from "swiper";
 function App() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+      <Swiper navigation={true} modules={[Navigation]} className="mySwiper" >
+     
         <SwiperSlide><AddItem /></SwiperSlide>
         <SwiperSlide><Leftisite /></SwiperSlide>
         <SwiperSlide><Rightsite/></SwiperSlide>

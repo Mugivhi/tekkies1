@@ -33,18 +33,15 @@ align-items: center;
 justify-content: center;
 background-position: absolute;
   font-size: 18px;
-  
-  background-color: transparent;
-  /* margin-top: 20rem; */
   padding-bottom: 4rem;
   padding-top: 4rem;
-  width: 15rem;
+  width: 50rem;
   position: relative;
   top: 20px;
  /* Center slide text vertically  */
- display: -webkit-box;
+ /* display: -webkit-box;
   display: -ms-flexbox;
-  display: -webkit-flex;
+  display: -webkit-flex; */
   display: flex;
   width: fit-content;
   -webkit-box-pack: center;
@@ -56,6 +53,7 @@ background-position: absolute;
   -webkit-align-items: center;
   align-items: center;
 }
+
 
 /* .swiper-slide img {
   display: block;
